@@ -8,6 +8,8 @@ def perform_operation(num1, num2, operation):
     def divide(num1, num2):
         if num2 == 0:
             return "Division by Zero not allowed"
+        elif num1 == 0:
+            return "Can't divide zero by and integer"
         else:
             return num1 / num2
     operations = {'add': add, 'subtract': subtract, 'multiply': multiply, 'divide': divide}
