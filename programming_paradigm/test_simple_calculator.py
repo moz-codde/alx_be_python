@@ -22,7 +22,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(7, 3), 21)
         self.assertEqual(self.calc.multiply(8, 0), 0)
 
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(8, 2), 4)
         self.assertIsNone(self.calc.divide(5, 0))
         self.assertIsInstance(self.calc.divide(7, 2), float)
