@@ -6,6 +6,11 @@ class Book:
     
     def __repr__(self):
         return f"{self.title} by {self.author}"
+    def return_book(self):
+        self._is_checked_out = False
+    
+    def check_out_book(self):
+        self._is_checked_out = True
     
 class Library:
     def __init__(self):
